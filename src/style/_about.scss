@@ -1,0 +1,21 @@
+.about-summary {
+  margin-bottom: 25px;
+
+  font: 400 2.6rem $Playfair;
+  color: $blue;
+
+  @include mq-min($tablet) {
+    width: 75%;
+  }
+}
+
+.about-span {
+  font: 900 2.6rem $Playfair;
+}
+
+.about-link {
+  font-family: Lato;
+  font-weight: 300;
+  color: $light-blue;
+  border-bottom: 1px solid $light-blue;
+}

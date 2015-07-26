@@ -1,0 +1,36 @@
+.intro {
+  // padding-top: 22.5vh;
+  padding-bottom: 50px;
+  color: $blue;
+}
+
+.intro-name {
+  font: 900 italic 4.2rem $Playfair;
+  // font: 900 4.2rem $Playfair;
+  letter-spacing: 1px;
+
+  @include mq-min($desktop) {
+    font-size: 5.2rem;
+  }
+}
+
+.intro-title {
+  margin-bottom: 50px;
+  font: 400 2.6rem $Playfair;
+}
+
+.intro-summary {
+  margin-bottom: 50px;
+  font: 400 2.4rem $Playfair;
+
+  @include mq-min($tablet) {
+    max-width: 75%;
+  }
+}
+
+.intro-link {
+  font-family: Lato;
+  font-weight: 300;
+  color: $light-blue;
+  border-bottom: 1px solid $light-blue;
+}

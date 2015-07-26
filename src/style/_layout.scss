@@ -1,0 +1,60 @@
+html, body {
+
+}
+
+body {
+  position: relative;
+}
+
+.wrapper {
+  @include clearfix;
+  min-height: 100vh;
+}
+
+body {
+  min-height: 100%;
+}
+
+.body-hr {
+  width: 100%;
+  height: 3px;
+}
+
+.container {
+  @include clearfix;
+  width: 85%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+// GRID
+
+@include mq-min($tablet) {
+  .row {
+  @include clearfix;
+  }
+
+  .col {
+    float: left;
+    margin-right: 5%;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .col-flush-3 {
+    .col {
+      &:nth-of-type(3n) { margin-right: 0; }
+    }
+  }
+
+  .col-half {
+    width: 45%;
+  }
+
+  .col-third {
+    width: 30%;
+  }
+}
+

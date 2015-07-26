@@ -1,8 +1,21 @@
 // breakpoints
 
+$tablet: 700px;
+$desktop: 1000px;
+
 // color vars
 
+$blue: #0a4d6d;
+$light-blue: #00a2e1;
+$cream: #FFF8E7;
+$off-white: #f7f7f7;
+$black: #28282e;
+// #34343b - alt
+
 // font vars
+
+$Playfair: "Playfair Display";
+$Lato: "Lato";
 
 // mixins and reset
 
@@ -14,10 +27,30 @@
 @import "ie";
 
 body {
-  // font-family: ;
-  // font-weight: ;
-  // font-size: ;
+  font-family: $Playfair;
+  font-weight: 400;
+  font-size: 1.6rem;
   line-height: 1.3;
+
+  // border-top: 5px solid $blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, $blue, $light-blue);
+  }
 }
 
 // partials
+
+@import "about";
+@import "intro";
+@import "layout";
+@import "nav";
+@import "utils";
+@import "footer";
+@import "resume";
+// @import "spinner";
+@import "work";

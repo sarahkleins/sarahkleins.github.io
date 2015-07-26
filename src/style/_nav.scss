@@ -1,0 +1,27 @@
+$nav-height: 70px;
+
+.nav {
+  // opacity: 0.5;
+  width: 100%;
+  height: $nav-height;
+}
+
+.nav-link {
+  padding-bottom: 20px;
+  margin-right: 50px;
+  font: 400 1.6rem $Playfair;
+  line-height: $nav-height;
+  color: $blue;
+
+  @include mq-min($tablet) {
+    margin-right: 75px;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &:hover {
+    border-bottom: 4px solid $blue;
+  }
+}

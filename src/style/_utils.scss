@@ -1,0 +1,29 @@
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-cream {
+  background-color: $cream;
+}
+
+.bg-off-white {
+  background-color: $off-white;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+// float
+
+.fl-left  { float: left;  }
+.fl-right { float: right; }
+
+// clearing
+
+.cl-left  { clear: left; }
+.cl-right { clear: right; }
+
+// padding
+
+.padding-top { padding-top: 22.5vh; }
