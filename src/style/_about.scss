@@ -14,8 +14,9 @@
 }
 
 .about-link {
+  border-bottom: 1px solid $light-blue;
+
   font-family: Lato;
   font-weight: 300;
   color: $light-blue;
-  border-bottom: 1px solid $light-blue;
 }
