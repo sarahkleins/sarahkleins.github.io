@@ -51,9 +51,12 @@ gulp.task('scripts', function() {
 
 // minify all images
 gulp.task('images', function() {
-  return gulp.src('src/images/**/*')
+  return gulp.src('src/images/**/*') //'src/images/**/*'
     .pipe(plugins.plumber({ errorHandler: onError }))
-    .pipe(plugins.imagemin({ progressive: true }))
+    .pipe(plugins.imagemin({
+      progressive: true,
+      optimizationLevel: 4
+    }))
     .pipe(gulp.dest('dist/images'))
     .pipe(plugins.connect.reload());
 });
