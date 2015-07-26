@@ -1,7 +1,6 @@
 $nav-height: 70px;
 
 .nav {
-  // opacity: 0.5;
   width: 100%;
   height: $nav-height;
 }
@@ -9,6 +8,7 @@ $nav-height: 70px;
 .nav-link {
   padding-bottom: 20px;
   margin-right: 50px;
+
   font: 400 1.6rem $Playfair;
   line-height: $nav-height;
   color: $blue;

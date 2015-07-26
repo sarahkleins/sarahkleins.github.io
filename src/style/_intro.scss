@@ -1,12 +1,10 @@
 .intro {
-  // padding-top: 22.5vh;
   padding-bottom: 50px;
   color: $blue;
 }
 
 .intro-name {
   font: 900 italic 4.2rem $Playfair;
-  // font: 900 4.2rem $Playfair;
   letter-spacing: 1px;
 
   @include mq-min($desktop) {
@@ -14,13 +12,16 @@
   }
 }
 
-.intro-title {
+.intro-title,
+.intro-summary {
   margin-bottom: 50px;
+}
+
+.intro-title {
   font: 400 2.6rem $Playfair;
 }
 
 .intro-summary {
-  margin-bottom: 50px;
   font: 400 2.4rem $Playfair;
 
   @include mq-min($tablet) {
