@@ -4,12 +4,7 @@
 }
 
 .intro-name {
-  font: 900 italic 4.2rem $Playfair;
-  letter-spacing: 1px;
-
-  @include mq-min($desktop) {
-    font-size: 5.2rem;
-  }
+  font: 400 2.6rem $Montserrat;
 }
 
 .intro-title,
@@ -18,11 +13,11 @@
 }
 
 .intro-title {
-  font: 400 2.6rem $Playfair;
+  font: 300 2.6rem $Montserrat;
 }
 
 .intro-summary {
-  font: 400 2.4rem $Playfair;
+  font: 300 2.4rem $Montserrat;
 
   @include mq-min($tablet) {
     max-width: 75%;

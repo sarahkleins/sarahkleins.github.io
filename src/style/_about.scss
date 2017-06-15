@@ -1,16 +1,12 @@
 .about-summary {
   margin-bottom: 25px;
 
-  font: 400 2.6rem $Playfair;
+  font: 300 2.4rem $Montserrat;
   color: $blue;
 
   @include mq-min($tablet) {
     width: 75%;
   }
-}
-
-.about-span {
-  font: 900 2.6rem $Playfair;
 }
 
 .about-link {
