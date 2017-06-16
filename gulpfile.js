@@ -4,7 +4,7 @@ var notifier = require('node-notifier');
 
 var deploy = require("gulp-gh-pages");
 var options = {
-    remoteUrl: "https://github.com/sarahkleins/sarahkleins.github.io.git",
+    remoteUrl: "git@github.com:sarahkleins/sarahkleins.github.io.git",
     branch: "master"};
 
 // error handler
