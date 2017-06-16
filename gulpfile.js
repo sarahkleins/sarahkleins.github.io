@@ -61,6 +61,7 @@ gulp.task('images', function() {
     .pipe(plugins.connect.reload());
 });
 
+// add any misc docs
 gulp.task('docs', function(){
   return gulp.src('src/docs/*')
     .pipe(gulp.dest('dist'))
