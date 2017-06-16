@@ -13,7 +13,7 @@ $black: #28282e;
 
 // font vars
 
-$Playfair: 'Playfair Display', serif;
+$Montserrat: 'Montserrat', serif; //Montserrat
 $Lato: 'Lato', sans-serif;
 
 // mixins and reset
@@ -26,7 +26,7 @@ $Lato: 'Lato', sans-serif;
 @import "ie";
 
 body {
-  font-family: $Playfair;
+  font-family: $Montserrat;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.3;
