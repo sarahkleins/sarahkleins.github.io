@@ -61,6 +61,12 @@ gulp.task('images', function() {
     .pipe(plugins.connect.reload());
 });
 
+gulp.task('docs', function(){
+  return gulp.src('src/docs/*')
+    .pipe(gulp.dest('dist'))
+    .pipe(plugins.connect.reload());
+});
+
 // deploy to github pages
 gulp.task('deploy', function () {
     gulp.src('./dist/**/*')
@@ -82,8 +88,9 @@ gulp.task('watch', function() {
   gulp.watch('src/style/*.scss', ['sass']);
   gulp.watch('src/scripts/*.js', ['scripts']);
   gulp.watch('src/images/**/*', ['images']);
+  gulp.watch('src/docs/*', ['docs']);
 });
 
 // build and default task
-gulp.task('build', ['html', 'sass', 'scripts', 'images']);
+gulp.task('build', ['html', 'sass', 'scripts', 'images', 'docs']);
 gulp.task('default', ['server', 'build', 'watch']);
