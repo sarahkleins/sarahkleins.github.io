@@ -1,1 +1,13 @@
-"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var _createClass=function(){function e(e,t){for(var n=0;n<t.length;n++){var a=t[n];a.enumerable=a.enumerable||!1,a.configurable=!0,"value"in a&&(a.writable=!0),Object.defineProperty(e,a.key,a)}}return function(t,n,a){return n&&e(t.prototype,n),a&&e(t,a),t}}(),Outset=function(){function e(t){_classCallCheck(this,e),document.addEventListener("DOMContentLoaded",this.create(),!1)}return _createClass(e,[{key:"create",value:function(){}}]),e}(),outset=new Outset({});
+'use strict';
+
+class Outset {
+  constructor(options) {
+    document.addEventListener('DOMContentLoaded', this.create(), false);
+  }
+
+  create() {}
+}
+
+// INSTANCE
+
+var outset = new Outset({});
