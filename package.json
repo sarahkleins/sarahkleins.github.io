@@ -5,6 +5,7 @@
   "author": "",
   "license": "",
   "devDependencies": {
+    "babel-core": "^6.26.0",
     "gulp": "*",
     "gulp-autoprefixer": "*",
     "gulp-babel": "*",
