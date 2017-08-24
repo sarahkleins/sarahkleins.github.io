@@ -44,7 +44,7 @@ gulp.task('scripts', function() {
     .pipe(plugins.plumber({ errorHandler: onError }))
     .pipe(plugins.babel())
     .pipe(plugins.concat('scripts.js'))
-    .pipe(plugins.uglify({ preserveComments: 'some' }))
+    //.pipe(plugins.uglify({ preserveComments: 'some' }))
     .pipe(gulp.dest('dist'))
     .pipe(plugins.connect.reload());
 });
